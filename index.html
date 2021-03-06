@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Multiselsect Form</title>
+</head>
+<body>
+    <form action="/action_page.php"class="multiselect_box" id="myform">
+        <label for="multiselect_box" >Choose a Language</label>
+        <select class="multiselect" id="mySelect" value="Not selected">
+            <option class="multiselect_option" value="" onClick="myfunction()" >C</option>
+            <option class="multiselect_option" value="" onClick="myfunction()" >C++</option>
+            <option class="multiselect_option" value="" onClick="myfunction()" >JavaScript</option>
+            <option class="multiselect_option" value="" onClick="myfunction()" >DSA</option>
+            <option class="multiselect_option" value="" onClick="myfunction()">JAVA</option>
+            <option class="multiselect_option" value="" onClick="myfunction()">HTML</option>
+            <option class="multiselect_option" value="" onClick="myfunction()">PYTHON</option>
+            <option class="multiselect_option" value="" onClick="myfunction()">CSS</option>
+            <option class="multiselect_option" value="" onClick="myfunction()">RUBY</option>
+            <option class="multiselect_option" value="" onClick="myfunction()">ROR</option>
+            <option class="multiselect_option" value="" onClick="myfunction()">C#</option>
+            <option class="multiselect_option" value="other" onClick="myfunction()">Others</option>
+        </select>
+        <div id="other_input">
+            <textarea name="message" id="textarea" cols="96" rows="7"></textarea>
+        </div>
+        <br><br>
+        <input type="button" id="select" onclick="multipleFunc()" value="Select multiple options">
+        <input type="button" value="Submit" onClick="location.href=location.href">
+      </form>
+    
+</body>
+<script src="JS/index.js"></script>
+</html>
